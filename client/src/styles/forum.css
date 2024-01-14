@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Forum {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+}
+    
+.headingForum {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+    
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+    
+button {
+  background-color: rgb(9, 35, 71);
+  color: white;
+  padding: 8px 16px; 
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+    
+.avatar-single {
+  display: inline-block;
+  position: absolute;
+  transform: translateX(-40px);
+  margin-top: -7px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;  
+  background-size: cover;
+  border: 1.5px solid var(--bg-secondary);
+}
+
+.username{
+  margin-left: 18px;
+}
+    
+.comment-content{
+  margin: 20px;
+  background-color: rgba(225, 211, 211, 0.567);
+  height: 30px;
+  justify-content: center;
+  text-align: left;
+  padding-left: 9px;
+  padding-top: 8px;
+}
+
+.user{
+  margin:10px;
+}    
+    
+.user-actions {
+  margin-top: 10px;
+}
+    
+.button-single,
+.button-delete-single {
+  display: inline-block;
+  background-color: rgb(9, 35, 71);
+  color: white;
+  margin-right: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 8px 16px; 
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+    
+.button-delete-single {
+  background-color: red;
+}
+
+.button-single:hover,
+.button-delete-single:hover {
+  background-color: #F19CBB;
+}
+   
+.button-single:active,
+.button-delete-single:active {
+  background-color: #F19CBB;
+}
+
+textarea {
+  position: relative;
+}
+    
+textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+    
+textarea::placeholder::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 10px;
+  background-image: linear-gradient(to right, transparent, #aaa, transparent);
+}
